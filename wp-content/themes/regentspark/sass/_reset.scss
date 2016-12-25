@@ -1,0 +1,23 @@
+a,
+button,
+input {
+    &:hover,
+    &:focus,
+    &:active {
+        border:none;
+        box-shadow: none;
+        outline: none;
+        text-decoration: none !important;
+    }
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: $font-size;
+    font-family: $font-family;
+}

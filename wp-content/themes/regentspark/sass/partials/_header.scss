@@ -1,0 +1,97 @@
+header {
+    background: #000;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+
+
+    .social-icons {
+
+        a {
+            display: block;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            color: #FFF;
+            font-size: 14px;
+            @include border-radius(100%);
+            background: #4c555e;
+            padding-top: 5px;
+        }
+    }
+
+    .top-menu {
+
+        li {
+            border-right: 1px solid #FFF;
+            color: #FFF;
+            font-size: $font-size;
+            vertical-align: baseline;
+
+            &:last-child {
+                border: none;
+            }
+            a {
+                color: #FFF;
+                font-weight: bold;
+                font-size: $font-size;
+                padding-right: 10px;
+            }
+
+            span {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            form {
+                display: inline-block;
+                input {
+                    background: #000;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    width: 150px;
+                    padding: 1px 5px;
+                    height: 25px;
+                    border-right: 0;
+                }
+
+                button {
+                    background: $main-color;
+                    border: none;
+                    color: #fff;
+                    text-align: center;
+                    width: 25px;
+                    height: 25px;
+                    padding: 0;
+                    margin-left:-4px;
+
+                    span {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.logo {
+    height: 100px;
+    padding-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+
+    a {
+        display: block;
+        margin-left: 70px;
+    }
+}
