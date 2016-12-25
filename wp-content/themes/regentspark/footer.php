@@ -27,7 +27,7 @@
         <!--// footer -->
 
         <!-- bootom footer -->
-        <div class="bottom-footer"></div>
+        <div class="bottom-footer visible-lg"></div>
         <!--// bottom footer -->
 
         <!-- loading -->
@@ -55,6 +55,6 @@
         <script src="<?php bloginfo('template_url'); ?>/js/swiper.jquery.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/imagesloaded.pkgd.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
-        
+
 </body>
 </html>

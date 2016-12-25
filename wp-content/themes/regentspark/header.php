@@ -30,8 +30,9 @@
 <body <?php body_class(); ?>>
 <header class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <ul class="list-unstyled list-inline social-icons">
+                        <li class="pull-left nav-toggle hidden-lg"><a href="#"><span class="fa fa-align-justify"></span></a></li>
                         <li><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
                         <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
                         <li><a href="#" target="_blank"><span class="fa fa-pinterest-p"></span></a></li>
@@ -39,7 +40,7 @@
                         <li><a href="#" target="_blank"><span class="fa fa-rss"></span></a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 hidden-xs">
                     <ul class="list-unstyled list-inline pull-right top-menu">
                         <li><a href="#">عربى</a></li>
                         <li><span>join Newsletter</span>
@@ -63,4 +64,3 @@
             </div>
         </div>
         <!--// logo -->
-

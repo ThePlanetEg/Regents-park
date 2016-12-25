@@ -1,3 +1,17 @@
+(function() {
+    'use strict';
+
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style');
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
+            )
+        );
+        document.querySelector('head').appendChild(msViewportStyle);
+    }
+
+})();
 function scroller(scroller) {
     var next     = scroller.next('.text-content-navigation').find('.text-content-next');
     var prev     = scroller.next('.text-content-navigation').find('.text-content-prev');
@@ -41,10 +55,8 @@ function thumbs(thumbs) {
 
 (function($){
     $(document).ready(function(){
-        $(window).on('load', function(){
-            $(document).imagesLoaded(function(){
-                $('.loading').fadeOut('slow');
-            });
+        $(document).imagesLoaded(function(){
+            $('.loading').fadeOut('slow');
         });
 
         $(document).on('click', '.thumbnails a', function(event){
@@ -95,6 +107,12 @@ function thumbs(thumbs) {
                 thumbs(slide);
             });
 
+            return false;
+        });
+
+        $(document).on('click', '.nav-toggle', function(event){
+            event.preventDefault();
+            $('.main-content').toggleClass('active-menu');
             return false;
         });
     });
