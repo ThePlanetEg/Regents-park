@@ -1,3 +1,6 @@
+@viewport {
+    width: device-width;
+}
 header {
     background: #000;
     height: 50px;
@@ -90,8 +93,8 @@ header {
     width: 100%;
     z-index: 999;
 
-    a {
-        display: block;
-        margin-left: 70px;
+    .logo-container {
+        width: 200px;
+        text-align: center;
     }
 }

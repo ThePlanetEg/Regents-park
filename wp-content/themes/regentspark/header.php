@@ -59,7 +59,9 @@
         <div class="container-fluid logo">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#" class="pull-left"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" width="100" alt="logo"></a>
+                    <div class="logo-container">
+                        <img src="<?php bloginfo('template_url'); ?>/img/logo.png" width="100" alt="logo">
+                    </div>
                 </div>
             </div>
         </div>

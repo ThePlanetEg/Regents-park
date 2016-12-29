@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-unstyled list-inline pull-right copyrights">
-                        <li><span>&copy; 2009 Al Dawlia, All Rights Reserved</span></li>
+                        <li><span>&copy; 2009 <strong>Al Dawlia</strong>, All Rights Reserved</span></li>
                         <li><img src="<?php bloginfo('template_url'); ?>/img/aldawlia.png" width="60" alt="Al Dawlia"></li>
                     </ul>
                 </div>

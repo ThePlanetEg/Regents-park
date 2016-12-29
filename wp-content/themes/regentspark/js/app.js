@@ -13,19 +13,22 @@
 
 })();
 function scroller(scroller) {
-    var next     = scroller.next('.text-content-navigation').find('.text-content-next');
-    var prev     = scroller.next('.text-content-navigation').find('.text-content-prev');
-    var scrollbar = scroller.find('.swiper-scrollbar');
-    scroller.swiper({
-        scrollbar: scrollbar,
-        direction: 'vertical',
-        slidesPerView: 'auto',
-        mousewheelControl: true,
-        freeMode: true,
-        grabCursor: true,
-        nextButton: next,
-        prevButton: prev
-    });
+    if(window.innerWidth > 767)
+    {
+        var next     = scroller.next('.text-content-navigation').find('.text-content-next');
+        var prev     = scroller.next('.text-content-navigation').find('.text-content-prev');
+        var scrollbar = scroller.find('.swiper-scrollbar');
+        scroller.swiper({
+            scrollbar: scrollbar,
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            mousewheelControl: true,
+            freeMode: true,
+            grabCursor: true,
+            nextButton: next,
+            prevButton: prev
+        });
+    }
 }
 
 function slider(slider) {
@@ -40,17 +43,20 @@ function slider(slider) {
 }
 
 function thumbs(thumbs) {
-    var next     = thumbs.next('.text-content-navigation').find('.text-content-next');
-    var prev     = thumbs.next('.text-content-navigation').find('.text-content-prev');
+    if(window.innerWidth > 767)
+    {
+        var next     = thumbs.next('.text-content-navigation').find('.text-content-next');
+        var prev     = thumbs.next('.text-content-navigation').find('.text-content-prev');
 
-    thumbs.swiper({
-        slidesPerView: 3,
-        direction: 'vertical',
-        nextButton: next,
-        prevButton: prev,
-        spaceBetween: 30,
-        loop: true
-    });
+        thumbs.swiper({
+            slidesPerView: 3,
+            direction: 'vertical',
+            nextButton: next,
+            prevButton: prev,
+            spaceBetween: 30,
+            loop: true
+        });
+    }
 }
 
 (function($){

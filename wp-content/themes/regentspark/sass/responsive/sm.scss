@@ -1,0 +1,124 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    $off-width: 40%;
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    .sm-center {
+        text-align: center;
+    }
+
+    header {
+        position: initial;
+
+        .social-icons {
+
+            .nav-toggle a {
+                background: none;
+            }
+        }
+    }
+
+    .logo {
+        text-align: center;
+        position: initial;
+        top: auto;
+        padding-top: 2px;
+        height: 80px;
+        a {
+            display: inline-block;
+            float: none !important;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                width: 90px;
+            }
+        }
+    }
+
+    footer {
+        position: initial;
+        bottom: 0;
+    }
+
+    .main-content {
+        transition: all 0.25s ease-out;
+        position: relative;
+        width: 100%;
+        top: 0px;
+        bottom: 0;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-right: 2px;
+        padding-left: 2px;
+
+        &.active-menu {
+            transform: translateX($off-width);
+        }
+
+        .row-flex {
+            display: block;
+        }
+
+        .main-nav {
+            width: $off-width;
+            position: absolute;
+            left: -$off-width;
+        }
+
+        .content-wrapper {
+            position: initial;
+            .text-content .swiper-slide,
+            .thumbnails .swiper-slide{
+                padding: 5px 10px;
+            }
+
+            .text-content,
+            .content,
+            .thumbnails {
+                width: 25%;
+                float: left;
+                position: initial;
+                font-size: 12px;
+                height: 400px;
+                overflow: hidden;
+
+                .thumbs-tab-content {
+                    display: block;
+
+                    .thumb-tab {
+                        padding: 5px;
+                        height: 100%;
+                        width: 100%;
+                        margin-left: 0;
+                        margin-top: 0;
+                        position: initial;
+                        iframe {
+                            position: initial;
+                            min-height: 350px !important;
+                        }
+                    }
+                }
+
+                .content-slider img {
+                    height: 400px !important;
+                }
+            }
+
+            .thumbnails {
+                padding: 10px 0;
+            }
+
+            .content {
+                width: 75%;
+            }
+
+            .text-content-navigation {
+                display: none;
+            }
+        }
+    }// main content
+}

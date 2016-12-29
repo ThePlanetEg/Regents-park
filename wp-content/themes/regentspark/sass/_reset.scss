@@ -15,9 +15,13 @@ html {
 }
 body {
     min-height: 100%;
-    background: url('../images/bg.jpg') no-repeat center center;
+    background-image: url('../img/bg.jpg');
+    background-color: rgba(0,0,0,.3) !important;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
+    background-blend-mode: multiply;
     font-size: $font-size;
     font-family: $font-family;
 }
