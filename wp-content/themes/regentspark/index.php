@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	        <!-- main content -->
+            <!-- main content -->
         <div class="container-fluid main-content">
             <div class="row-flex">
                 <div class="main-nav">
@@ -49,7 +49,7 @@ get_header(); ?>
                     while ( $the_query->have_posts() ) : $the_query->the_post(); 
                     $count++; ?>
 
-                    <?php if(get_the_title() != 'Videos'): ?>
+                    <?php if(get_the_title() != 'Videos' ): ?>
                     <div class="tab" id="tab<?php echo $count; ?>">
                         <div class="text-content">
                             <div class="swiper-wrapper">
@@ -67,6 +67,9 @@ get_header(); ?>
                             </ul>
                         </div>
                         <div class="content">
+                        <?php if(get_the_title() == 'Contact Us'): 
+                         echo do_shortcode( '[contact-form-7 id="24" title="Contact us"]' ); 
+                        else: ?>
                             <div class="content-slider">
                             <?php if( have_rows('gallery') ): ?>
                                 <div class="swiper-wrapper">
@@ -86,11 +89,12 @@ get_header(); ?>
                                     </ul>
                                 </div>
                             </div>
+                        <?php endif ?>
                         </div>
                     </div>
                     <?php else: ?>
 
-                    <div class="tab thumbnails-tab active" id="tab5">
+                    <div class="tab thumbnails-tab active" id="tab<?php echo $count; ?>">
                         <div class="thumbnails">
                         <?php if( have_rows('videos') ): ?>
                             <div class="swiper-wrapper">
